@@ -36,6 +36,15 @@
             width: calc(20% + 12vmin);
           }
         }
+        .circle1 {
+          fill: $circle-color1;
+        }
+        .circle2 {
+          fill: $circle-color2;
+        }
+        .circle3 {
+          fill: $circle-color3;
+        }
       }
     }
   }

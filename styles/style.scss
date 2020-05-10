@@ -8,6 +8,9 @@ $background-color2: #2a2a2a;
 $shoe-color1: #81363b;
 $shoe-color2: #636877;
 $shoe-background: rgba(196, 196, 196, 0.2);
+$circle-color1: #ff444b;
+$circle-color2: #8044ff;
+$circle-color3: #44ff8f;
 
 @mixin flex($direction, $align, $justify) {
   display: flex;

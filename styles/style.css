@@ -261,6 +261,18 @@ button {
   width: calc(20% + 12vmin);
 }
 
+#product .product-wrapper .image-content .circles .circle1 {
+  fill: #ff444b;
+}
+
+#product .product-wrapper .image-content .circles .circle2 {
+  fill: #8044ff;
+}
+
+#product .product-wrapper .image-content .circles .circle3 {
+  fill: #44ff8f;
+}
+
 @media screen and (max-width: 1296px) {
   .navbar nav {
     -webkit-box-pack: center;
