@@ -15,6 +15,13 @@ body {
 
 li {
   font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: calc(1.2rem + 1vmin);
+  color: #636877;
 }
 
 h1 {

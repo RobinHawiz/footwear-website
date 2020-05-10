@@ -1,8 +1,10 @@
 $header1: calc(5rem + 3vmin);
 $header2: calc(3.2rem + 2vmin);
-$background-color: #e5e5e5;
 $button-font-size: calc(1rem + 1vmin);
+$a-font-size: calc(1.2rem + 1vmin);
+$background-color: #e5e5e5;
 $shoe-color1: #81363b;
+$shoe-color2: #636877;
 
 @mixin flex($direction, $align, $justify) {
   display: flex;
@@ -13,6 +15,7 @@ $shoe-color1: #81363b;
 
 @import "globals";
 @import "home";
+@import "navbar";
 
 @media screen and (max-width: 1296px) {
   #home {
