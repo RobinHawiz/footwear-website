@@ -1,9 +1,14 @@
 #home {
   .home-wrapper {
+    background: $background-color;
     min-height: 90vh;
     @include flex(row, center, center);
 
     .info {
+      h2 {
+        padding-top: calc(0.5rem + 1vmin);
+        padding-bottom: calc(3rem + 4vmin);
+      }
       .buttons {
         button {
           padding: 2rem 3rem;
@@ -11,6 +16,7 @@
         .shop {
           background: $shoe-color1;
           color: white;
+          margin-right: calc(1rem + 3vmin);
         }
         .learn {
           background: transparent;

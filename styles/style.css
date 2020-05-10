@@ -28,12 +28,14 @@ h2 {
 }
 
 button {
+  font-family: "Russo One", sans-serif;
   font-size: calc(1rem + 1vmin);
   border: none;
   cursor: pointer;
 }
 
 #home .home-wrapper {
+  background: #e5e5e5;
   min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +52,11 @@ button {
           justify-content: center;
 }
 
+#home .home-wrapper .info h2 {
+  padding-top: calc(0.5rem + 1vmin);
+  padding-bottom: calc(3rem + 4vmin);
+}
+
 #home .home-wrapper .info .buttons button {
   padding: 2rem 3rem;
 }
@@ -57,6 +64,7 @@ button {
 #home .home-wrapper .info .buttons .shop {
   background: #81363b;
   color: white;
+  margin-right: calc(1rem + 3vmin);
 }
 
 #home .home-wrapper .info .buttons .learn {
