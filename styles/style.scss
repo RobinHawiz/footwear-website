@@ -1,8 +1,7 @@
-$header1: calc(5rem + 4vmin);
-$header2: calc(4rem + 3vmin);
-
-@import "globals";
-@import "home";
+$header1: calc(5rem + 3vmin);
+$header2: calc(3.2rem + 2vmin);
+$button-font-size: calc(1rem + 1vmin);
+$shoe-color1: #81363b;
 
 @mixin flex($direction, $align, $justify) {
   display: flex;
@@ -10,3 +9,6 @@ $header2: calc(4rem + 3vmin);
   align-items: $align;
   justify-content: $justify;
 }
+
+@import "globals";
+@import "home";

@@ -15,3 +15,18 @@ body {
 li {
   font-family: "Roboto", sans-serif;
 }
+
+h1 {
+  font-size: $header1;
+  color: $shoe-color1;
+}
+h2 {
+  font-size: $header2;
+  color: $shoe-color1;
+}
+
+button {
+  font-size: $button-font-size;
+  border: none;
+  cursor: pointer;
+}

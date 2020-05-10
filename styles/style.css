@@ -17,7 +17,62 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: calc(5rem + 3vmin);
+  color: #81363b;
+}
+
+h2 {
+  font-size: calc(3.2rem + 2vmin);
+  color: #81363b;
+}
+
+button {
+  font-size: calc(1rem + 1vmin);
+  border: none;
+  cursor: pointer;
+}
+
 #home .home-wrapper {
   min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .home-wrapper .info .buttons button {
+  padding: 2rem 3rem;
+}
+
+#home .home-wrapper .info .buttons .shop {
+  background: #81363b;
+  color: white;
+}
+
+#home .home-wrapper .info .buttons .learn {
+  background: transparent;
+  -webkit-box-shadow: 0px 0px 0px 0.3rem #636877 inset;
+          box-shadow: 0px 0px 0px 0.3rem #636877 inset;
+  color: #636877;
+}
+
+#home .home-wrapper .image {
+  height: auto;
+  width: 35%;
+}
+
+#home .home-wrapper .image img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
