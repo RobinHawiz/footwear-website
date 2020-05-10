@@ -3,8 +3,10 @@
     background: $background-color;
     min-height: 90vh;
     @include flex(row, center, center);
+    flex-wrap: wrap;
 
     .info {
+      padding: 2rem 0rem;
       h2 {
         padding-top: calc(0.5rem + 1vmin);
         padding-bottom: calc(3rem + 4vmin);
@@ -28,6 +30,7 @@
 
     .image {
       height: auto;
+      min-width: 30rem;
       width: 35%;
       img {
         width: 100%;

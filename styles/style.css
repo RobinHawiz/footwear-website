@@ -50,6 +50,12 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#home .home-wrapper .info {
+  padding: 2rem 0rem;
 }
 
 #home .home-wrapper .info h2 {
@@ -76,11 +82,22 @@ button {
 
 #home .home-wrapper .image {
   height: auto;
+  min-width: 30rem;
   width: 35%;
 }
 
 #home .home-wrapper .image img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1296px) {
+  #home .home-wrapper {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

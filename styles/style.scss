@@ -13,3 +13,12 @@ $shoe-color1: #81363b;
 
 @import "globals";
 @import "home";
+
+@media screen and (max-width: 1296px) {
+  #home {
+    .home-wrapper {
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+}
