@@ -30,12 +30,10 @@ p {
 
 h1 {
   font-size: calc(5rem + 3vmin);
-  color: #81363b;
 }
 
 h2 {
   font-size: calc(3.2rem + 2vmin);
-  color: #81363b;
 }
 
 button {
