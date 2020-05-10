@@ -1,0 +1,19 @@
+.navbar {
+  background: $background-color;
+
+  nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+
+    .shopping-cart {
+      height: 4rem;
+      width: 5.5rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

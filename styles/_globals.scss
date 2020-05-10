@@ -13,7 +13,6 @@ body {
 }
 
 li {
-  font-family: "Roboto", sans-serif;
   list-style: none;
 }
 
@@ -21,6 +20,11 @@ a {
   text-decoration: none;
   font-size: $a-font-size;
   color: $shoe-color2;
+}
+
+p {
+  color: white;
+  font-size: $a-font-size;
 }
 
 h1 {
