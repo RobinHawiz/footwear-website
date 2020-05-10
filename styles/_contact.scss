@@ -56,10 +56,14 @@
         z-index: -1;
       }
     }
-
     .title {
       @include flex(row, center, center);
       flex: 1 1 70rem;
+      padding: 1rem 0rem;
+      h1 {
+        color: $shoe-color1;
+        font-weight: lighter;
+      }
     }
   }
 }

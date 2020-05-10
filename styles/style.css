@@ -431,6 +431,12 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 70rem;
           flex: 1 1 70rem;
+  padding: 1rem 0rem;
+}
+
+#contact .contact-wrapper .title h1 {
+  color: #81363b;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 1296px) {
