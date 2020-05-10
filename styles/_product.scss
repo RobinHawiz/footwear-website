@@ -1,0 +1,42 @@
+#product {
+  background: $background-color2;
+  .product-wrapper {
+    min-height: 90vh;
+    @include flex(row, center, space-around);
+    .info {
+      color: white;
+
+      h2 {
+        font-weight: lighter;
+      }
+      h3 {
+        font-weight: lighter;
+      }
+    }
+    .image-content {
+      background: $shoe-background;
+      padding-bottom: 10rem;
+      border-radius: 5rem;
+      .image {
+        height: auto;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .circles {
+        @include flex(row, none, space-around);
+        width: 90%;
+        margin: auto;
+        .circle {
+          text-align: center;
+          svg {
+            height: calc(20% + 12vmin);
+            width: calc(20% + 12vmin);
+          }
+        }
+      }
+    }
+  }
+}

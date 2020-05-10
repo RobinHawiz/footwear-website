@@ -7,9 +7,13 @@
 
     .info {
       padding: 2rem 0rem;
+      h1 {
+        color: $shoe-color1;
+      }
       h2 {
         padding-top: calc(0.5rem + 1vmin);
         padding-bottom: calc(3rem + 4vmin);
+        color: $shoe-color1;
       }
       .buttons {
         button {
