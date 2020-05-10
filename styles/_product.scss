@@ -3,19 +3,30 @@
   .product-wrapper {
     min-height: 90vh;
     @include flex(row, center, space-around);
+    flex-wrap: wrap;
     .info {
       color: white;
+      padding: 4rem;
 
-      h2 {
+      h1 {
         font-weight: lighter;
       }
       h3 {
         font-weight: lighter;
+        padding-top: calc(2rem + 2vmin);
+      }
+      button {
+        margin-top: calc(2rem + 2vmin);
+        background: $shoe-color1;
+        color: white;
+
+        padding: 2rem 3rem;
       }
     }
     .image-content {
       background: $shoe-background;
       border-radius: 5rem;
+      margin: 5rem;
       @include flex(column, center, center);
 
       .image {

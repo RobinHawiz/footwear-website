@@ -37,4 +37,9 @@ $circle-color3: #44ff8f;
       @include flex(column, none, flex-start);
     }
   }
+  #product {
+    .product-wrapper {
+      text-align: center;
+    }
+  }
 }
