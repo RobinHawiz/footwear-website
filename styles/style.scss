@@ -18,6 +18,12 @@ $shoe-color2: #636877;
 @import "navbar";
 
 @media screen and (max-width: 1296px) {
+  .navbar {
+    nav {
+      justify-content: center;
+    }
+  }
+
   #home {
     .home-wrapper {
       text-align: center;

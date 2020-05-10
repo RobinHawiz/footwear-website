@@ -3,6 +3,7 @@
 
   nav {
     min-height: 10vh;
+    padding: 2rem 0rem;
     width: 90%;
     margin: auto;
     @include flex(row, center, flex-end);
@@ -10,10 +11,19 @@
     ul {
       @include flex(row, none, space-around);
       flex: 0.2 1 10rem;
+      li {
+        padding: 0rem 1rem;
+      }
     }
 
     .shopping {
-      @include flex(row, none, center);
+      @include flex(row, center, center);
+
+      p {
+        padding: 1.2rem 2rem;
+        border-radius: 3rem;
+        background: $shoe-color2;
+      }
 
       .shopping-cart {
         height: 4rem;

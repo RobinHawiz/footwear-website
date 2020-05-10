@@ -108,6 +108,7 @@ button {
 
 .navbar nav {
   min-height: 10vh;
+  padding: 2rem 0rem;
   width: 90%;
   margin: auto;
   display: -webkit-box;
@@ -143,6 +144,10 @@ button {
           flex: 0.2 1 10rem;
 }
 
+.navbar nav ul li {
+  padding: 0rem 1rem;
+}
+
 .navbar nav .shopping {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,12 +156,18 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.navbar nav .shopping p {
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  background: #636877;
 }
 
 .navbar nav .shopping .shopping-cart {
@@ -170,6 +181,11 @@ button {
 }
 
 @media screen and (max-width: 1296px) {
+  .navbar nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #home .home-wrapper {
     text-align: center;
     display: -webkit-box;
