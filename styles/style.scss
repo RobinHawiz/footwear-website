@@ -43,4 +43,25 @@ $circle-color3: #44ff8f;
       text-align: center;
     }
   }
+  #contact {
+    .contact-wrapper {
+      .form {
+        form {
+          margin: 0 auto;
+
+          .info-box {
+            margin: 0 10rem;
+          }
+        }
+        &::before {
+          height: 150%;
+
+          z-index: -1;
+        }
+      }
+    }
+    .title {
+      text-align: center;
+    }
+  }
 }

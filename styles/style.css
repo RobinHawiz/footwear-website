@@ -335,9 +335,8 @@ button {
 }
 
 #contact .contact-wrapper .form {
-  -ms-flex-preferred-size: 70rem;
-      flex-basis: 70rem;
-  height: 100%;
+  -ms-flex-preferred-size: 60rem;
+      flex-basis: 60rem;
   position: relative;
 }
 
@@ -402,8 +401,9 @@ button {
 #contact .contact-wrapper .form::before {
   content: "";
   position: absolute;
-  height: 140rem;
-  width: 140rem;
+  height: 140vh;
+  width: 70vw;
+  min-width: 70rem;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -412,6 +412,25 @@ button {
   display: block;
   background: #2a2a2a;
   z-index: -1;
+}
+
+#contact .contact-wrapper .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70rem;
+          flex: 1 1 70rem;
 }
 
 @media screen and (max-width: 1296px) {
@@ -437,6 +456,19 @@ button {
             justify-content: flex-start;
   }
   #product .product-wrapper {
+    text-align: center;
+  }
+  #contact .contact-wrapper .form form {
+    margin: 0 auto;
+  }
+  #contact .contact-wrapper .form form .info-box {
+    margin: 0 10rem;
+  }
+  #contact .contact-wrapper .form::before {
+    height: 150%;
+    z-index: -1;
+  }
+  #contact .title {
     text-align: center;
   }
 }

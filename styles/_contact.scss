@@ -7,8 +7,8 @@
     flex-wrap: wrap;
 
     .form {
-      flex-basis: 70rem;
-      height: 100%;
+      flex-basis: 60rem;
+
       position: relative;
       form {
         width: 75%;
@@ -40,11 +40,13 @@
           }
         }
       }
+
       &::before {
         content: "";
         position: absolute;
-        height: 140rem;
-        width: 140rem;
+        height: 140vh;
+        width: 70vw;
+        min-width: 70rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -53,6 +55,11 @@
         background: $background-color2;
         z-index: -1;
       }
+    }
+
+    .title {
+      @include flex(row, center, center);
+      flex: 1 1 70rem;
     }
   }
 }
