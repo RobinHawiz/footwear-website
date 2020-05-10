@@ -330,20 +330,19 @@ button {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #contact .contact-wrapper .form {
-  width: 25%;
-  -webkit-box-flex: 0.1;
-      -ms-flex: 0.1 1 40rem;
-          flex: 0.1 1 40rem;
+  -ms-flex-preferred-size: 70rem;
+      flex-basis: 70rem;
+  height: 100%;
+  position: relative;
 }
 
 #contact .contact-wrapper .form form {
-  width: 100%;
+  width: 75%;
 }
 
 #contact .contact-wrapper .form form .info-box {
@@ -403,10 +402,12 @@ button {
 #contact .contact-wrapper .form::before {
   content: "";
   position: absolute;
-  height: 150%;
-  width: 100%;
-  left: 40%;
-  top: -25%;
+  height: 140rem;
+  width: 140rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 100%;
   display: block;
   background: #2a2a2a;

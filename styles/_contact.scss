@@ -3,14 +3,15 @@
   .contact-wrapper {
     min-height: 90vh;
     @include flex(row, center, space-around);
-    position: relative;
+
     flex-wrap: wrap;
 
     .form {
-      width: 25%;
-      flex: 0.1 1 40rem;
+      flex-basis: 70rem;
+      height: 100%;
+      position: relative;
       form {
-        width: 100%;
+        width: 75%;
         .info-box {
           @include flex(column, none, none);
           margin-top: 5rem;
@@ -42,10 +43,11 @@
       &::before {
         content: "";
         position: absolute;
-        height: 150%;
-        width: 100%;
-        left: 40%;
-        top: -25%;
+        height: 140rem;
+        width: 140rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         border-radius: 100%;
         display: block;
         background: $background-color2;
