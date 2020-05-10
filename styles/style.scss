@@ -21,7 +21,7 @@ $shoe-color2: #636877;
   #home {
     .home-wrapper {
       text-align: center;
-      flex-direction: column;
+      @include flex(column, none, flex-start);
     }
   }
 }

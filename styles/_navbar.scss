@@ -5,14 +5,24 @@
     min-height: 10vh;
     width: 90%;
     margin: auto;
+    @include flex(row, center, flex-end);
 
-    .shopping-cart {
-      height: 4rem;
-      width: 5.5rem;
+    ul {
+      @include flex(row, none, space-around);
+      flex: 0.2 1 10rem;
+    }
 
-      img {
-        height: 100%;
-        width: 100%;
+    .shopping {
+      @include flex(row, none, center);
+
+      .shopping-cart {
+        height: 4rem;
+        width: 5.5rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
