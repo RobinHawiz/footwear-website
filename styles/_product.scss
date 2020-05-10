@@ -15,8 +15,9 @@
     }
     .image-content {
       background: $shoe-background;
-      padding-bottom: 10rem;
       border-radius: 5rem;
+      @include flex(column, center, center);
+
       .image {
         height: auto;
         width: 100%;
@@ -28,12 +29,12 @@
       .circles {
         @include flex(row, none, space-around);
         width: 90%;
-        margin: auto;
+        padding-bottom: 3vmin;
         .circle {
           text-align: center;
           svg {
-            height: calc(20% + 12vmin);
-            width: calc(20% + 12vmin);
+            height: calc(50% + 8vmin);
+            width: calc(50% + 8vmin);
           }
         }
         .circle1 {
