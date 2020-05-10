@@ -16,4 +16,8 @@ body {
 li {
   font-family: "Roboto", sans-serif;
 }
+
+#home .home-wrapper {
+  min-height: 90vh;
+}
 /*# sourceMappingURL=style.css.map */
