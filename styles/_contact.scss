@@ -1,0 +1,56 @@
+#contact {
+  overflow: hidden;
+  .contact-wrapper {
+    min-height: 90vh;
+    @include flex(row, center, space-around);
+    position: relative;
+    flex-wrap: wrap;
+
+    .form {
+      width: 25%;
+      flex: 0.1 1 40rem;
+      form {
+        width: 100%;
+        .info-box {
+          @include flex(column, none, none);
+          margin-top: 5rem;
+
+          input {
+            margin-top: 2rem;
+            border: 0.3rem solid $shoe-color1;
+          }
+          textarea {
+            margin-top: 2rem;
+            border: 0.3rem solid $shoe-color1;
+          }
+        }
+        .info-box-message {
+          input {
+            line-height: calc(10rem + 10vmin);
+          }
+        }
+        .button {
+          @include flex(row, center, center);
+          button {
+            margin-top: calc(2rem + 2vmin);
+            background: $shoe-color1;
+            color: white;
+            padding: 2rem 3rem;
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 150%;
+        width: 100%;
+        left: 40%;
+        top: -25%;
+        border-radius: 100%;
+        display: block;
+        background: $background-color2;
+        z-index: -1;
+      }
+    }
+  }
+}

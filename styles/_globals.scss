@@ -37,6 +37,21 @@ h3 {
   font-size: $header3;
 }
 
+label,
+input,
+textarea {
+  font-size: $a-font-size;
+}
+
+label {
+  color: white;
+}
+
+input,
+textarea {
+  padding: 1rem;
+}
+
 button {
   font-family: "Russo One", sans-serif;
   font-size: $button-font-size;

@@ -40,6 +40,21 @@ h3 {
   font-size: calc(2rem + 1vmin);
 }
 
+label,
+input,
+textarea {
+  font-size: calc(1.2rem + 1vmin);
+}
+
+label {
+  color: white;
+}
+
+input,
+textarea {
+  padding: 1rem;
+}
+
 button {
   font-family: "Russo One", sans-serif;
   font-size: calc(1rem + 1vmin);
@@ -295,6 +310,107 @@ button {
 
 #product .product-wrapper .image-content .circles .circle3 {
   fill: #44ff8f;
+}
+
+#contact {
+  overflow: hidden;
+}
+
+#contact .contact-wrapper {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .contact-wrapper .form {
+  width: 25%;
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1 1 40rem;
+          flex: 0.1 1 40rem;
+}
+
+#contact .contact-wrapper .form form {
+  width: 100%;
+}
+
+#contact .contact-wrapper .form form .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  margin-top: 5rem;
+}
+
+#contact .contact-wrapper .form form .info-box input {
+  margin-top: 2rem;
+  border: 0.3rem solid #81363b;
+}
+
+#contact .contact-wrapper .form form .info-box textarea {
+  margin-top: 2rem;
+  border: 0.3rem solid #81363b;
+}
+
+#contact .contact-wrapper .form form .info-box-message input {
+  line-height: calc(10rem + 10vmin);
+}
+
+#contact .contact-wrapper .form form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contact-wrapper .form form .button button {
+  margin-top: calc(2rem + 2vmin);
+  background: #81363b;
+  color: white;
+  padding: 2rem 3rem;
+}
+
+#contact .contact-wrapper .form::before {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  left: 40%;
+  top: -25%;
+  border-radius: 100%;
+  display: block;
+  background: #2a2a2a;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1296px) {
