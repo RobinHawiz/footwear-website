@@ -1,0 +1,67 @@
+$header1: calc(5rem + 3vmin);
+$header2: calc(3.2rem + 2vmin);
+$header3: calc(2rem + 1vmin);
+$button-font-size: calc(1rem + 1vmin);
+$a-font-size: calc(1.2rem + 1vmin);
+$background-color: #e5e5e5;
+$background-color2: #2a2a2a;
+$shoe-color1: #81363b;
+$shoe-color2: #636877;
+$shoe-background: rgba(196, 196, 196, 0.2);
+$circle-color1: #ff444b;
+$circle-color2: #8044ff;
+$circle-color3: #44ff8f;
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@import "globals";
+@import "home";
+@import "navbar";
+@import "product";
+@import "contact";
+
+@media screen and (max-width: 1296px) {
+  .navbar {
+    nav {
+      justify-content: center;
+    }
+  }
+
+  #home {
+    .home-wrapper {
+      text-align: center;
+      @include flex(column, none, flex-start);
+    }
+  }
+  #product {
+    .product-wrapper {
+      text-align: center;
+    }
+  }
+  #contact {
+    .contact-wrapper {
+      .form {
+        form {
+          margin: 0 auto;
+
+          .info-box {
+            margin: 0 10rem;
+          }
+        }
+        &::before {
+          height: 150%;
+
+          z-index: -1;
+        }
+      }
+    }
+    .title {
+      text-align: center;
+    }
+  }
+}
